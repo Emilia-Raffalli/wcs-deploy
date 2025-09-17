@@ -1,0 +1,23 @@
+# Caddyfile pour le projet Wild Code School
+
+# Production
+032025-bleu-4.wns.wilders.dev {
+    reverse_proxy localhost:8000
+}
+
+# Staging / préprod
+staging.032025-bleu-4.wns.wilders.dev {
+    reverse_proxy localhost:8001
+}
+
+# Webhooks / opérations
+ops.032025-bleu-4.wns.wilders.dev {
+    reverse_proxy localhost:9000
+}
+
+# Notes :
+# - Chaque bloc correspond à un "site" ou sous-domaine distinct.
+# - Les accolades { ... } sont obligatoires autour de la configuration de chaque site.
+# - reverse_proxy redirige le trafic HTTP vers le service local correspondant.
+# - Pour tester la configuration : sudo caddy validate --config /etc/caddy/Caddyfile
+# - Pour recharger Caddy après modification : sudo systemctl reload caddy

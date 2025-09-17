@@ -1,0 +1,4 @@
+2025/09/16 15:39:46 [emerg] 1#1: host not found in upstream "server" in /etc/nginx/nginx.conf:10
+2025/09/16 15:39:47 [emerg] 1#1: host not found in upstream "server" in /etc/nginx/nginx.conf:10
+2025/09/16 15:39:47 [emerg] 1#1: host not found in upstream "server" in /etc/nginx/nginx.conf:10
+2025/09/16 15:39:48 [emerg] 1#1: host not found in upstream "server" in /etc/nginx/nginx.conf:10
